@@ -22,3 +22,10 @@ li(data-id=item.id)
         - var closed = item.closingAt && +new Date(item.closingAt) < Date.now()
         span.time-ago-label= (closed ? t('common.closed') : t('common.close')) + ' '
         span.meta-item.meta-timeago.ago(data-time=item.closingAt.toString())
+
+  ul.children
+    - for child in item.children
+      li(data-id=item.id)
+        a(href='/law/#{child.id}')
+          .item-tag
+          span.title= child.mediaTitle
