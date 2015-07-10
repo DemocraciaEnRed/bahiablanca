@@ -24,6 +24,10 @@
               - each parent in parents
                 option(selected= law.parent ? parent.id === law.parent : false, value=parent.id)= parent.mediaTitle
         .form-group
+          label.col-sm-2.control-label= t('admin-laws-form.label.order')
+          .col-sm-10
+            input.form-control(type='text', id="order", name='order', tabindex=3, placeholder=t('admin-laws-form.label.order'), validate='numeric', value=law.order)
+        .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.tag')
           .col-sm-10
             select.form-control(name='tag', tabindex=2, validate='required')
