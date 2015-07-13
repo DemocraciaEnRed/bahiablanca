@@ -64,3 +64,27 @@
     font-size 12px
     color #666
     margin-left 5px
+
+#list-container
+  ul.nav.navlist
+    li.parent
+      a
+        border-bottom 1px solid #d7dbdd
+        display block
+
+      ul.children
+        padding-left 0
+
+        li
+          &:hover
+            background-color #fff
+
+          &.active
+            background-color #fff
+            color black !important
+
+          a
+            color #666
+            text-decoration none
+            &:hover
+              text-decoration none

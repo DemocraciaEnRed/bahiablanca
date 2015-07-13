@@ -1,6 +1,6 @@
 - var voted = citizen.logged() && !!item.voted
 
-li(data-id=item.id)
+li.parent(data-id=item.id)
   a(href='/law/#{item.id}', class = voted ? 'voted' : '')
     .item-tag
       img(src=tagImages[item.tag.image].url)
