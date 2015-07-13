@@ -25,7 +25,7 @@ li.parent(data-id=item.id)
 
   ul.children
     - for child in item.children
-      li(data-id=item.id)
+      li(data-id=child.id)
         a(href='/law/#{child.id}')
           .item-tag
           span.title= child.mediaTitle
