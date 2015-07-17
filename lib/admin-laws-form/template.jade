@@ -28,6 +28,14 @@
           .col-sm-10
             input.form-control(type='text', id="order", name='order', tabindex=3, placeholder=t('admin-laws-form.label.order'), validate='numeric', value=law.order)
         .form-group
+          label.col-sm-2.control-label= t('admin-laws-form.label.fgcolor')
+          .col-sm-10
+            input.form-control(type='text', id="fgcolor", name='fgColor', tabindex=3, placeholder=t('admin-laws-form.label.fgcolor'), value=law.styles ? law.styles.fgColor : '')
+        .form-group
+          label.col-sm-2.control-label= t('admin-laws-form.label.bgcolor')
+          .col-sm-10
+            input.form-control(type='text', id="bgcolor", name='bgColor', tabindex=3, placeholder=t('admin-laws-form.label.bgcolor'), value=law.styles ? law.styles.bgColor : '')
+        .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.tag')
           .col-sm-10
             select.form-control(name='tag', tabindex=2, validate='required')
@@ -46,20 +54,28 @@
           .col-sm-10
             input.form-control(type='text', id="authorUrl", name='authorUrl', tabindex=5, placeholder='http://en.wikipedia.org/wiki/John_Doe', value=law.authorUrl, validate='url')
         .form-group
+          label.col-sm-2.control-label= t('admin-laws-form.label.author-picture') + ' URL'
+          .col-sm-10
+            input.form-control(type='text', id="authorPictureUrl", name='authorPictureUrl', tabindex=6, placeholder='', value=law.authorPictureUrl, validate='url')
+        .form-group
+          label.col-sm-2.control-label= t('admin-laws-form.label.image') + ' URL'
+          .col-sm-10
+            input.form-control(type='text', id="imageUrl", name='imageUrl', tabindex=7, placeholder='', value=law.imageUrl, validate='url')
+        .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.votable')
           .col-sm-10.votable-toggle
         .form-group.hide
           label.col-sm-2.control-label= t('admin-laws-form.label.clause-truncation-text')
           .col-sm-10
-            input.form-control(type='text', name='clauseTruncationText', placeholder=t('common.read-more'), value=law.clauseTruncationText)
+            input.form-control(type='text', name='clauseTruncationText', tabindex=8, placeholder=t('common.read-more'), value=law.clauseTruncationText)
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.source')
           .col-sm-10
-            input.form-control(type='url', name='source', tabindex=6, placeholder=t('admin-laws-form.placeholder.source'), value=law.source, validate='url')
+            input.form-control(type='url', name='source', tabindex=9, placeholder=t('admin-laws-form.placeholder.source'), value=law.source, validate='url')
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.summary')
           .col-sm-10
-            textarea.form-control(name='summary', tabindex=7)= law.summary
+            textarea.form-control(name='summary', tabindex=10)= law.summary
         .form-group.closingAt
           label.col-sm-2.control-label= t('admin-laws-form.label.closingAt')
           - var closingAt = ''
@@ -70,11 +86,11 @@
             - closingAt = closingAt.getFullYear() + '/' + (closingAt.getMonth() + 1) + '/' + closingAt.getDate()
           .col-sm-10
             .input-group
-              input.form-control(name='closingAt', tabindex=10, readonly=true, value=closingAt)
+              input.form-control(name='closingAt', tabindex=11, readonly=true, value=closingAt)
               span.input-group-addon.clear-closingAt
                 i.glyphicon.glyphicon-remove
             .input-group
-              input.form-control(name='closingAtTime', tabindex=11, value=closingAtTime, placeholder='hh:mm', validate='time')
+              input.form-control(name='closingAtTime', tabindex=12, value=closingAtTime, placeholder='hh:mm', validate='time')
         .form-group
           .law-clauses
             - if (law.clauses && law.clauses.length)
@@ -90,7 +106,7 @@
                 include link
           .col-sm-2.pull-right
             a.add-link.btn.btn-block.btn-info(href='#')= t('admin-laws-form.button.add-link')
-            .form-group: input.btn.btn-success.btn-block.btn-lg.hide(type='submit', tabindex=12, value=t('admin-laws-form.button.submit'))
+            .form-group: input.btn.btn-success.btn-block.btn-lg.hide(type='submit', tabindex=13, value=t('admin-laws-form.button.submit'))
           span.add-link-forbidden.hide=t('admin-laws-form.message.add-link-forbidden')
     .col-md-2.commands
       a.btn.btn-success.btn-block.save
