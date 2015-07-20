@@ -1,1 +1,27 @@
-.content
+#landing
+  .container-fluid
+    .row
+      .col-md-offset-1.col-md-10.card
+        .row
+          for law in laws
+            .col-md-4
+              .well
+                a(href='/law/#{law.id}').law-title-link
+                  h2(style=law.styles ? 'background-color:#{law.styles.bgColor};color:#{law.styles.fgColor}' : '')=law.mediaTitle
+                .author-wrapper
+                  .author
+                    if (law.authorPictureUrl)
+                      a(href=law.authorUrl ? law.authorUrl : '#')
+                        img(src='#{law.authorPictureUrl}')
+                    p
+                      if (law.author)
+                        =t('landing.author') + ': '
+                        if (law.authorUrl)
+                          a.author-link(href=law.authorUrl)=law.author
+                        else
+                          span=law.author
+                .pic(style='background-image:url(#{law.imageUrl})')
+                  span
+                .summary
+                  p=law.summary
+              a(href='/law/#{law.id}').btn.btn-primary.btn-block.discuss=t('landing.discuss')

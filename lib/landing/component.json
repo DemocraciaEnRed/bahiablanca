@@ -12,7 +12,8 @@
     "config",
     "title",
     "render",
-    "view"
+    "view",
+    "laws"
   ],
   "scripts": [ "landing.js", "view.js" ],
   "styles": [ "styles.styl" ],

@@ -173,6 +173,8 @@
   "homepage.create-debate": "Crear mi primer tema",
   "homepage.no-laws": "No hay leyes para mostrar",
   "invalid.password": "Contraseña no válida",
+  "landing.author": "Autor",
+  "landing.discuss": "Discutí este proyecto",
   "markdown.cheatsheet.title": "Ayuda de edición",
   "markdown.comments.formatting-help": "Ayuda de edición",
   "markdown.emphasis.example.1": "Énfasis, conocido como itálica, puede escribirse con *asteriscos* o _guiones bajos_.",
