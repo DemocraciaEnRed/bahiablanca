@@ -6,7 +6,7 @@
           for law in laws
             .col-md-4
               .well
-                a(href='/law/#{law.id}').law-title-link
+                a(href='/law/#{law.id}').law-title-link.text-center
                   h2(style=law.styles ? 'background-color:#{law.styles.bgColor};color:#{law.styles.fgColor}' : '')=law.mediaTitle
                 .author-wrapper
                   .author
