@@ -23,5 +23,5 @@
                 .pic(style='background-image:url(#{law.imageUrl})')
                   span
                 .summary
-                  p=law.summary
+                  p!=law.summary
               a(href='/law/#{law.id}').btn.btn-primary.btn-block.discuss=t('landing.discuss')
