@@ -46,7 +46,16 @@
         border-radius 100%
   .summary
     overflow hidden
-    height 150px
+    height 174px
+    &:before
+      content ''
+      width 90%
+      height 45%
+      position absolute
+      left 19px
+      top 284px
+      background linear-gradient(transparent 150px, rgb(245,245,245))
+      pointer-events none
 
     p
       display inline-block
