@@ -1,0 +1,76 @@
+#landing
+  .card
+    padding-top 10px
+    .row
+      margin-bottom 30px
+
+  .well
+    height 500px
+    margin-top 50px
+    margin-bottom 5px
+
+  a
+    text-decoration none
+
+    h2
+      font-size 1.5em
+      margin-top 0
+      margin-bottom 1em
+      padding 10px 15px
+      font-weight 900
+      text-transform uppercase
+      border-radius 5px
+
+  .author-wrapper
+    text-align center
+    min-height 40px
+    padding-top 8px
+    margin-bottom 16px
+
+    .author
+      display inline-block
+      position relative
+      margin 0
+      padding-left 3.6em
+      .author-link
+        color black
+
+      img
+        display inline-block
+        position absolute
+        left 0
+        top 50%
+        margin-top -1.5em
+        width 3em
+        height 3em
+        border-radius 100%
+  .summary
+    overflow hidden
+    height 150px
+
+    p
+      display inline-block
+      font-size 1.1em
+      margin 0
+      width 100%
+
+      &:after
+        content '\00a0\00a0/\00a0\00a0'
+      &:last-child:after
+        content ''
+      a
+        color #000
+        text-decoration none
+        border-bottom 1px solid transparent
+        transition all .1s ease-in
+        &:hover
+          color #333
+          border-bottom 1px solid #666
+  .pic
+    width 100%
+    margin-bottom 12px
+    padding-top 45%
+    position relative
+    background-size cover
+    background-repeat no-repeat
+    background-position center center

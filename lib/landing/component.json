@@ -1,0 +1,22 @@
+{
+  "name": "landing",
+  "description": "Landing page showing parent laws",
+  "dependencies": {
+    "visionmedia/page.js": "1.3.7",
+    "jadejs/jade": "1.1.5",
+    "tj/node-querystring": "0.6.6",
+    "yields/empty": "0.0.1",
+    "component/dom": "1.0.6"
+  },
+  "locals": [
+    "config",
+    "title",
+    "render",
+    "view",
+    "laws"
+  ],
+  "scripts": [ "landing.js", "view.js" ],
+  "styles": [ "styles.styl" ],
+  "templates": [ "template.jade"],
+  "main": "landing.js"
+}
