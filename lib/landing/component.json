@@ -6,7 +6,8 @@
     "jadejs/jade": "1.1.5",
     "tj/node-querystring": "0.6.6",
     "yields/empty": "0.0.1",
-    "component/dom": "1.0.6"
+    "component/dom": "1.0.6",
+    "javve/list.js": "1.1.1"
   },
   "locals": [
     "config",

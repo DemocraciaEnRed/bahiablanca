@@ -1,13 +1,30 @@
 #landing
   .container-fluid
+    .col-md-8.col-md-offset-2.filter
+      .row.well.well-lg
+        .col-md-6.col-xs-12.text-center
+          .row
+            .input-group.input-group-md
+              span.input-group-addon
+                i.glyphicon.glyphicon-search
+              input.form-control.search(type='text', placeholder='#{t("landing.search.placeholder")}', autofocus)
+        .col-md-6.col-xs-12
+          .row.text-center.sort
+            span=t('landing.sort-by')
+            button.btn.btn-link.sort(data-sort='law-title')
+              =t('landing.sort-by.title')
+            button.btn.btn-link.sort(data-sort='law-closing-date')
+              =t('landing.sort-by.date')
+
     .row
       .col-md-offset-1.col-md-10.card
-        .row
+        .row.list
           for law in laws
             .col-md-4
-              .well
+              .well.law
                 a(href='/law/#{law.id}').law-title-link.text-center
-                  h2(style=law.styles ? 'background-color:#{law.styles.bgColor};color:#{law.styles.fgColor}' : '')=law.mediaTitle
+                  h2.law-title(style=law.styles ? 'background-color:#{law.styles.bgColor};color:#{law.styles.fgColor}' : '')=law.mediaTitle
+                .law-closing-date.hide=law.closingAt
                 .author-wrapper
                   .author
                     if (law.authorPictureUrl)
