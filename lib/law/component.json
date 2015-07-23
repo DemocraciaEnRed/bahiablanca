@@ -18,7 +18,8 @@
     "proposal-options",
     "comments-view",
     "browser-lock",
-    "debug"
+    "debug",
+    "next-law-button"
   ],
   "scripts": [ "law.js" ],
   "styles": [ ],

@@ -1,0 +1,11 @@
+{
+  "name": "next-law-button",
+  "dependencies": {
+    "component/t" : "1.0.0"
+  },
+  "locals": [ "view", "sidebar" ],
+  "templates": [ "template.jade" ],
+  "scripts": [ "next-law-button.js" ],
+  "styles": [ "styles.styl" ],
+  "main": "next-law-button.js"
+}
