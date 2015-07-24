@@ -7,19 +7,17 @@
     "tj/node-querystring": "0.6.6",
     "yields/empty": "0.0.1",
     "component/dom": "1.0.6",
-    "javve/list.js": "1.1.1",
-    "chjj/marked": "v0.3.2"
+    "javve/list.js": "1.1.1"
   },
   "locals": [
     "config",
     "title",
     "render",
     "view",
-    "laws",
-    "huge-overlay"
+    "laws"
   ],
   "scripts": [ "landing.js", "view.js" ],
   "styles": [ "styles.styl" ],
-  "templates": [ "template.jade", "welcome.md" ],
+  "templates": [ "template.jade" ],
   "main": "landing.js"
 }

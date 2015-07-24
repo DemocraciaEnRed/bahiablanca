@@ -6,7 +6,9 @@
     "component/t": "1.0.0",
     "DemocracyOS/timeago": "master",
     "code42day/ga": "1.1.0",
-    "slifszyc/user-agent": "0.0.9"
+    "slifszyc/user-agent": "0.0.9",
+    "chjj/marked": "v0.3.2",
+    "component/cookie": "^1.1.1"
   },
   "locals": [
     "auth-facebook",
@@ -28,7 +30,8 @@
     "help",
     "404",
     "browser-update",
-    "debug"
+    "debug",
+    "huge-overlay"
   ],
   "scripts": [ "boot.js" ],
   "styles": [ "boot.styl", "boot-responsive.styl" ],
@@ -37,5 +40,6 @@
     "images/favicon.ico",
     "images/logo.png"
   ],
+  "templates": [ "welcome.md" ],
   "main": "boot.js"
 }
