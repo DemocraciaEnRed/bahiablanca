@@ -1,0 +1,14 @@
+{
+  "name": "huge-overlay",
+  "description": "Huge overlay",
+  "dependencies": {
+    "component/dom": "1.0.6"
+  },
+  "locals": [
+    "view"
+  ],
+  "scripts": [ "huge-overlay.js" ],
+  "templates": [ "template.jade" ],
+  "styles": [ "styles.styl" ],
+  "main": "huge-overlay.js"
+}

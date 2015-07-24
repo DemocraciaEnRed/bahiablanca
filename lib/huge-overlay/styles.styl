@@ -1,0 +1,57 @@
+.huge-overlay
+  position fixed
+  width 100%
+  height 100%
+  top 0
+  left 0
+  background rgba(50, 128, 132, 0.95)
+  z-index 999999
+
+/* Overlay closing cross */
+.huge-overlay .huge-overlay-close
+  width 80px
+  height 80px
+  position absolute
+  right 20px
+  overflow hidden
+  border none
+  background-color transparent
+  outline none
+  z-index 1000000
+
+  .glyphicon
+    font-size 36px
+
+.huge-overlay .body
+  text-align center
+  position relative
+  top 50%
+  height 60%
+  -webkit-transform translateY(-50%)
+  transform translateY(-50%)
+
+  font-size 24px
+  font-weight bold
+  text-shadow 1px 1px 1px black
+  color white
+
+  .btn
+    margin-top 30px
+    padding 10px 40px
+    font-size 24px
+
+/* Effects */
+.huge-overlay-simplegenie
+  visibility hidden
+  -webkit-transform translateY(60%) scale(0)
+  transform translateY(60%) scale(0)
+  -webkit-transition -webkit-transform 0.4s, visibility 0s 0.4s
+  transition transform 0.4s, visibility 0s 0.4s
+
+
+.huge-overlay-simplegenie.open
+  visibility visible
+  -webkit-transform translateY(0%) scale(1)
+  transform translateY(0%) scale(1)
+  -webkit-transition -webkit-transform 0.4s
+  transition transform 0.4s
