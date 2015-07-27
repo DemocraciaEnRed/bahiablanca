@@ -8,19 +8,33 @@
               span.input-group-addon
                 i.glyphicon.glyphicon-search
               input.form-control.search(type='text', placeholder='#{t("landing.search.placeholder")}', autofocus)
-          .row.author-filter
-            .btn-group.pull-left
-              button.btn.btn-default.dropdown-toggle.toggle-author(type='button')
-                span= t('landing.filter.author.filterby') + ': '
-                strong= filter.author
-                span.caret
-              ul.dropdown-list.dropdown-menu
-                li.author-filter-item(data-id=0)
-                  a(href='#')=t('landing.filter.author.all')
-                li.divider(role='separator')
-                - each author in authors
-                  li.author-filter-item(data-id=author.id)
-                    a(href='#')=author.name
+          .row
+            .author-filter
+              .btn-group.pull-left
+                button.btn.btn-default.dropdown-toggle.toggle-author(type='button')
+                  span= t('landing.filter.author.filterby') + ': '
+                  strong= filter.author
+                  span.caret
+                ul.dropdown-list.dropdown-menu
+                  li.filter-item(data-id=0)
+                    a(href='#')=t('landing.filter.author.all')
+                  li.divider(role='separator')
+                  - each author in authors
+                    li.filter-item(data-id=author.id)
+                      a(href='#')=author.name
+            .tag-filter
+              .btn-group.pull-left
+                button.btn.btn-default.dropdown-toggle.toggle-tag(type='button')
+                  span= t('landing.filter.tag.filterby') + ': '
+                  strong= filter.tags
+                  span.caret
+                ul.dropdown-list.dropdown-menu
+                  li.filter-item(data-id=0)
+                    a(href='#')=t('landing.filter.tag.all')
+                  li.divider(role='separator')
+                  - each tag in tags
+                    li.filter-item(data-id=tag.id)
+                      a(href='#')=tag.name
         .col-md-6.col-xs-12
           .row.text-center.sort
             span=t('landing.sort-by')
@@ -52,6 +66,7 @@
                           span.law-author=law.author
                 .pic(style='background-image:url(#{law.imageUrl})')
                   span
+                .law-tag.hide=law.tag._id
                 .summary
                   !=law.summary
               a(href='/law/#{law.id}').btn.btn-primary.btn-block.discuss=t('landing.discuss')
