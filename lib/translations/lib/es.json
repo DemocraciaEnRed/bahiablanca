@@ -175,6 +175,8 @@
   "huge-overlay.close": "¡Vamos!",
   "invalid.password": "Contraseña no válida",
   "landing.author": "Autor",
+  "landing.filter.author.filterby": "Autor",
+  "landing.filter.author.all": "Todos",
   "landing.discuss": "Discutí este proyecto",
   "landing.search.placeholder": "Buscar un proyecto de ley...",
   "landing.sort-by": "Ordenar por",
