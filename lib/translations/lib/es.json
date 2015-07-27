@@ -177,6 +177,8 @@
   "landing.author": "Autor",
   "landing.filter.author.filterby": "Autor",
   "landing.filter.author.all": "Todos",
+  "landing.filter.tag.filterby": "Categoría",
+  "landing.filter.tag.all": "Todos",
   "landing.discuss": "Discutí este proyecto",
   "landing.search.placeholder": "Buscar un proyecto de ley...",
   "landing.sort-by": "Ordenar por",

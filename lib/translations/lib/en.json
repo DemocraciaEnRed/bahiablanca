@@ -178,6 +178,8 @@
   "landing.discuss": "Discuss this bill",
   "landing.filter.author.filterby": "Author",
   "landing.filter.author.all": "All",
+  "landing.filter.tag.filterby": "Tag",
+  "landing.filter.tag.all": "All",
   "landing.search.placeholder": "Search a proposal...",
   "landing.sort-by": "Sort by",
   "landing.sort-by.date": "Closing date",
