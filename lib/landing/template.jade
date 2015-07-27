@@ -8,6 +8,19 @@
               span.input-group-addon
                 i.glyphicon.glyphicon-search
               input.form-control.search(type='text', placeholder='#{t("landing.search.placeholder")}', autofocus)
+          .row.author-filter
+            .btn-group.pull-left
+              button.btn.btn-default.dropdown-toggle.toggle-author(type='button')
+                span= t('landing.filter.author.filterby') + ': '
+                strong= filter.author
+                span.caret
+              ul.dropdown-list.dropdown-menu
+                li.author-filter-item(data-id=0)
+                  a(href='#')=t('landing.filter.author.all')
+                li.divider(role='separator')
+                - each author in authors
+                  li.author-filter-item(data-id=author.id)
+                    a(href='#')=author.name
         .col-md-6.col-xs-12
           .row.text-center.sort
             span=t('landing.sort-by')
@@ -34,9 +47,9 @@
                       if (law.author)
                         =t('landing.author') + ': '
                         if (law.authorUrl)
-                          a.author-link(href=law.authorUrl)=law.author
+                          a.author-link.law-author(href=law.authorUrl)=law.author
                         else
-                          span=law.author
+                          span.law-author=law.author
                 .pic(style='background-image:url(#{law.imageUrl})')
                   span
                 .summary
