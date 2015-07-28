@@ -9,10 +9,10 @@
                 i.glyphicon.glyphicon-search
               input.form-control.search(type='text', placeholder='#{t("landing.search.placeholder")}', autofocus)
           .row.lower
-            .col-md-8.col-xs-12.filters
-              .text.pull-left=t('landing.filter-by')
-              #author-filter
-              #tag-filter
+            .col-md-8.col-xs-12.filters.text-center
+              .text.pull-left.hidden-xs=t('landing.filter-by')
+              span#author-filter
+              span#tag-filter
 
             .col-md-4.col-xs-12.sort
               span=t('landing.sort-by')
