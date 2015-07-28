@@ -2,46 +2,24 @@
   .container-fluid
     .col-md-8.col-md-offset-2.filter
       .row.well.well-lg
-        .col-md-6.col-xs-12.text-center
-          .row
+        .col-md-12.col-xs-12.text-center
+          .row.higher
             .input-group.input-group-md
               span.input-group-addon
                 i.glyphicon.glyphicon-search
               input.form-control.search(type='text', placeholder='#{t("landing.search.placeholder")}', autofocus)
-          .row
-            .author-filter
-              .btn-group.pull-left
-                button.btn.btn-default.dropdown-toggle.toggle-author(type='button')
-                  span= t('landing.filter.author.filterby') + ': '
-                  strong= filter.author
-                  span.caret
-                ul.dropdown-list.dropdown-menu
-                  li.filter-item(data-id=0)
-                    a(href='#')=t('landing.filter.author.all')
-                  li.divider(role='separator')
-                  - each author in authors
-                    li.filter-item(data-id=author.id)
-                      a(href='#')=author.name
-            .tag-filter
-              .btn-group.pull-left
-                button.btn.btn-default.dropdown-toggle.toggle-tag(type='button')
-                  span= t('landing.filter.tag.filterby') + ': '
-                  strong= filter.tags
-                  span.caret
-                ul.dropdown-list.dropdown-menu
-                  li.filter-item(data-id=0)
-                    a(href='#')=t('landing.filter.tag.all')
-                  li.divider(role='separator')
-                  - each tag in tags
-                    li.filter-item(data-id=tag.id)
-                      a(href='#')=tag.name
-        .col-md-6.col-xs-12
-          .row.text-center.sort
-            span=t('landing.sort-by')
-            button.btn.btn-link.sort(data-sort='law-title')
-              =t('landing.sort-by.title')
-            button.btn.btn-link.sort(data-sort='law-closing-date')
-              =t('landing.sort-by.date')
+          .row.lower
+            .col-md-8.col-xs-12.filters
+              .text.pull-left=t('landing.filter-by')
+              #author-filter
+              #tag-filter
+
+            .col-md-4.col-xs-12.sort
+              span=t('landing.sort-by')
+              button.btn.btn-link.sort(data-sort='law-title')
+                =t('landing.sort-by.title')
+              button.btn.btn-link.sort(data-sort='law-closing-date')
+                =t('landing.sort-by.date')
 
     .row
       .col-md-offset-1.col-md-10.card

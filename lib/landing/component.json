@@ -8,7 +8,6 @@
     "yields/empty": "0.0.1",
     "component/dom": "1.0.6",
     "javve/list.js": "1.1.1",
-    "mjlescano/toggle-parent": "0.1.0",
     "component/t": "1.0.0"
   },
   "locals": [
@@ -16,7 +15,8 @@
     "title",
     "render",
     "view",
-    "laws"
+    "laws",
+    "dropdown"
   ],
   "scripts": [ "landing.js", "view.js" ],
   "styles": [ "styles.styl" ],
