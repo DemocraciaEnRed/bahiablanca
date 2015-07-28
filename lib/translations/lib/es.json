@@ -150,6 +150,7 @@
   "common.or": "o",
   "common.read-more": "Leer más",
   "democracyos.markdown.flavored": "Formato de texto",
+  "dropdown.all": "Todos",
   "forgot.error.email-not-valid": "Tienes que validar tu dirección de correo electrónico antes de poder reestablecer tu contraseña",
   "forgot.explanation": "Te enviaremos un correo electrónico con un enlace para reestablecer tu contraseña",
   "forgot.mail.example": "ejemplo@email.com",
