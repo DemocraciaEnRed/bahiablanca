@@ -3,16 +3,17 @@
 li.parent(data-id=item.id)
   - var style = item.styles ? ('background:' + item.styles.bgColor + ';color:' + item.styles.fgColor) : ''
   a.parent(href='/law/#{item.id}', style=style)
-    //- .item-badges
-    //-   - if(voted)
-    //-     include ./check
     span.title= item.mediaTitle
 
   ul.children
-    - for child, idx in item.children
+    li(data-id=item.id)
+      a.main(href='/law/#{item.id}')
+        span.title Introducción
+
+    for child, idx in item.children
       li(data-id=child.id)
         - var classes = [];
-        - classes.push(idx < 2 ? 'main' : '');
+        - classes.push(idx < 1 ? 'main' : '');
         - classes.push(voted ? 'voted' : '')
         a(href='/law/#{child.id}', class=classes.join(' '))
           .item-tag
