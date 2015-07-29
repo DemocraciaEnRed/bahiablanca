@@ -1,7 +1,7 @@
 - var voted = citizen.logged() && !!item.voted
 
 li.parent(data-id=item.id)
-  - var style = item.styles ? 'background:#{item.styles.bgColor};color:#{item.styles.fgColor}' : ''
+  - var style = item.styles ? ('background:' + item.styles.bgColor + ';color:' + item.styles.fgColor) : ''
   a.parent(href='/law/#{item.id}', style=style)
     //- .item-badges
     //-   - if(voted)
