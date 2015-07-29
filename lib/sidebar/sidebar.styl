@@ -66,16 +66,32 @@
     margin-left 5px
 
 #list-container
+  .navlist
+    li
+      a
+        padding-left 40px
+
   ul.nav.navlist
     li.parent
       a
-        border-bottom 1px solid #d7dbdd
         display block
+
+        &.parent
+          border-radius 5px
+          margin-top 20px
+          margin-left 2px
+          margin-right 2px
+          margin-bottom 20px
+          padding-left 15px
+          cursor default
+          text-transform uppercase
 
       ul.children
         padding-left 0
 
         li
+          &:first-child
+            border-top 1px solid #d7dbdd
           &:hover
             background-color #fff
 
@@ -89,6 +105,11 @@
             &:hover
               text-decoration none
 
+            &.main
+              text-transform uppercase
+              padding-left 20px
+
 nav.sidebar-nav
   .back-container
     margin-top 20px
+    margin-bottom 20px
