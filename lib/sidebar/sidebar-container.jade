@@ -1,6 +1,8 @@
 nav.sidebar-nav
-  .back-container.text-center
-    a(href='/').btn.btn-primary=t('sidebar.back')
   #filter-container.dropdown-department
 
   #list-container
+  .back-container.text-center
+    a(href='/').btn.btn-primary
+      span.glyphicon.glyphicon-chevron-left
+      =t('sidebar.back')
