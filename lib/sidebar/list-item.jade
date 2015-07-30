@@ -1,5 +1,3 @@
-- var voted = citizen.logged() && !!item.voted
-
 li.parent(data-id=item.id)
   - var style = item.styles ? ('background:' + item.styles.bgColor + ';color:' + item.styles.fgColor) : ''
   a.parent(href='/law/#{item.id}', style=style)
@@ -14,7 +12,10 @@ li.parent(data-id=item.id)
       li(data-id=child.id)
         - var classes = [];
         - classes.push(idx < 1 ? 'main' : '');
-        - classes.push(voted ? 'voted' : '')
         a(href='/law/#{child.id}', class=classes.join(' '))
           .item-tag
+          .item-badges
+            - var voted = citizen.logged() && !!child.voted
+            - if (voted)
+              include ./check
           span.title= child.mediaTitle
