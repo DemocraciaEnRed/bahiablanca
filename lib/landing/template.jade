@@ -23,6 +23,8 @@
 
     .row
       .col-md-offset-1.col-md-10.card
+        .row.hide.text-center#nomatch
+          span=t('landing.filter.nomatch')
         .row.list
           for law in laws
             .col-md-4
