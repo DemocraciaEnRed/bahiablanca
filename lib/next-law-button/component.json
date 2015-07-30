@@ -3,7 +3,7 @@
   "dependencies": {
     "component/t" : "1.0.0"
   },
-  "locals": [ "view", "sidebar" ],
+  "locals": [ "view" ],
   "templates": [ "template.jade" ],
   "scripts": [ "next-law-button.js" ],
   "styles": [ "styles.styl" ],
