@@ -1,5 +1,8 @@
 .huge-overlay
   position fixed
+  display flex
+  justify-content center
+  align-items center
   width 100%
   height 100%
   top 0
@@ -23,17 +26,19 @@
     font-size 36px
 
 .huge-overlay .body
-  text-align center
   position relative
-  top 50%
-  height 60%
-  -webkit-transform translateY(-50%)
-  transform translateY(-50%)
-
+  padding 15px
+  max-width 700px
+  max-height 100%
+  text-align center
   font-size 24px
   font-weight bold
   text-shadow 1px 1px 1px black
   color white
+  overflow auto
+
+  @media screen and (max-width: 480px)
+    font-size 20px
 
   a
     color white
