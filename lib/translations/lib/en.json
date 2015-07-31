@@ -180,6 +180,7 @@
   "landing.filter-by": "Filter by",
   "landing.filter.author.filterby": "Author",
   "landing.filter.nomatch": "There are no laws matching with your search and/or filters.",
+  "landing.filter.tag.nofilter": "None",
   "landing.filter.tag.filterby": "Tag",
   "landing.search.placeholder": "Search a proposal...",
   "landing.sort-by": "Sort by",

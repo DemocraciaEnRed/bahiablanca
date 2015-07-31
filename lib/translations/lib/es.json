@@ -179,6 +179,7 @@
   "landing.filter-by": "Filtrar por",
   "landing.filter.author.filterby": "Autor",
   "landing.filter.nomatch": "No hay ordenanzas que concuerden con tu búsqueda y/o filtros.",
+  "landing.filter.tag.nofilter": "Ninguno",
   "landing.filter.tag.filterby": "Categoría",
   "landing.discuss": "Discutí este proyecto",
   "landing.search.placeholder": "Buscar un proyecto de ley...",
