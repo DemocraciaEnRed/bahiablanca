@@ -18,7 +18,13 @@
     "laws",
     "dropdown"
   ],
-  "scripts": [ "landing.js", "view.js" ],
+  "scripts": [
+    "landing.js",
+    "view.js",
+    "buttons/author-filter.js",
+    "buttons/tag-filter.js",
+    "buttons/sort.js"
+  ],
   "styles": [ "styles.styl" ],
   "templates": [ "template.jade" ],
   "main": "landing.js"
