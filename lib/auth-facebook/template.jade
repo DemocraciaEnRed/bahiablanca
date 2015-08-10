@@ -9,6 +9,9 @@
       = t('signin.login-with-facebook')
 
     - if (config.termsOfService)
-      p: a(href="/help/terms-of-service")= t('help.tos.title')
+      p
+        =t('help.tos.message')
+        | 
+        a(href="/help/terms-of-service")= t('help.tos.title')
     - if (config.privacyPolicy)
       p: a(href="/help/privacy-policy")= t('help.pp.title')
