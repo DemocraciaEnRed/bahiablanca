@@ -47,6 +47,8 @@
                 .law-tag.hide=law.tag._id
                 .summary
                   !=law.summary
+                .law-keywords.hide
+                  =law.keywords.join(' ')
               a(href='/law/#{law.id}').btn.btn-primary.btn-block.discuss=t('landing.discuss')
 
     footer.footer-container
