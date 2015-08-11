@@ -2,10 +2,12 @@
   "name": "huge-overlay",
   "description": "Huge overlay",
   "dependencies": {
-    "component/dom": "1.0.6"
+    "component/dom": "1.0.6",
+    "visionmedia/debug": "2.1.3"
   },
   "locals": [
-    "view"
+    "view",
+    "img-preloader"
   ],
   "scripts": [ "huge-overlay.js" ],
   "templates": [ "template.jade" ],
