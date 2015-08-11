@@ -1,0 +1,14 @@
+{
+  "name": "img-preloader",
+  "description": "Preloads images",
+  "dependencies": {
+    "component/emitter": "1.1.3",
+    "component/inherit": "0.0.3"
+  },
+  "locals": [
+  ],
+  "scripts": [ "img-preloader.js" ],
+  "templates": [ ],
+  "styles": [ ],
+  "main": "img-preloader.js"
+}
