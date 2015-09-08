@@ -31,7 +31,8 @@
     "404",
     "browser-update",
     "debug",
-    "huge-overlay"
+    "huge-overlay",
+    "tutorial"
   ],
   "scripts": [ "boot.js" ],
   "styles": [ "boot.styl", "boot-responsive.styl" ],
