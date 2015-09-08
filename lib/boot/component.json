@@ -32,7 +32,8 @@
     "browser-update",
     "debug",
     "huge-overlay",
-    "tutorial"
+    "tutorial",
+    "about"
   ],
   "scripts": [ "boot.js" ],
   "styles": [ "boot.styl", "boot-responsive.styl" ],
