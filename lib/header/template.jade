@@ -12,7 +12,6 @@
         img(src=config.logo, class=classes).logo-image
         - if (mobileLogo)
           img(src=config.logoMobile).logo-image.visible-xs-inline-block
-        //- span.logo-link=t('common.app-name')
 
   .user-nav.btn-group
     .user
@@ -25,15 +24,7 @@
       i.icon-user
       span= t('header.signup')
 
-    a(href='/help/about').login.pull-left.hidden-xs
+    a(href='/about', style=style).login.pull-left.hidden-xs
       span= t('header.about')
-    a(href='/help/tutorial').login.pull-left.hidden-xs
+    a(href='/tutorial', style=style).login.pull-left.hidden-xs
       span= t('header.tutorial')
-    //- a(href='/help/terms-of-service').login.pull-left.hidden-xs
-    //-   span= t('header.tos')
-
-    //- - var target = config.homeLink ? {} : { 'target': '_blank'};
-    //- a.login.pull-left(href=config.organizationUrl, style=style)&attributes(target)
-    //-   span= config.organizationName
-    //- a.login.pull-left(href='#', id='feedback')
-    //-   span= t('header.feedback')
