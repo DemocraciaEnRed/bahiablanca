@@ -42,6 +42,10 @@
                           a.author-link.law-author(href=law.authorUrl)=law.author
                         else
                           span.law-author=law.author
+                      if (law.party)
+                        p
+                          =t('landing.party') + ': '
+                          span.party-name=law.party
                 .pic(style='background-image:url(#{law.imageUrl})')
                   span
                 .law-tag.hide=law.tag._id

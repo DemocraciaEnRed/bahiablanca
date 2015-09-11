@@ -46,40 +46,44 @@
           .col-sm-10
             input.form-control(type='text', id="lawId", name='lawId', tabindex=3, placeholder=t('admin-laws-form.label.lawId'), value=law.lawId)
         .form-group
+          label.col-sm-2.control-label= t('admin-laws-form.label.party')
+          .col-sm-10
+            input.form-control(type='text', id="party", name='party', tabindex=4, placeholder=t('admin-laws-form.label.party'), value=law.party, validate='author')
+        .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.author')
           .col-sm-10
-            input.form-control(type='text', id="lawAuthor", name='lawAuthor', tabindex=4, placeholder='John Doe', value=law.author, validate='author')
+            input.form-control(type='text', id="lawAuthor", name='lawAuthor', tabindex=5, placeholder='John Doe', value=law.author, validate='author')
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.author') + ' URL'
           .col-sm-10
-            input.form-control(type='text', id="authorUrl", name='authorUrl', tabindex=5, placeholder='http://en.wikipedia.org/wiki/John_Doe', value=law.authorUrl, validate='url')
+            input.form-control(type='text', id="authorUrl", name='authorUrl', tabindex=6, placeholder='http://en.wikipedia.org/wiki/John_Doe', value=law.authorUrl, validate='url')
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.author-picture') + ' URL'
           .col-sm-10
-            input.form-control(type='text', id="authorPictureUrl", name='authorPictureUrl', tabindex=6, placeholder='', value=law.authorPictureUrl, validate='url')
+            input.form-control(type='text', id="authorPictureUrl", name='authorPictureUrl', tabindex=7, placeholder='', value=law.authorPictureUrl, validate='url')
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.image') + ' URL'
           .col-sm-10
-            input.form-control(type='text', id="imageUrl", name='imageUrl', tabindex=7, placeholder='', value=law.imageUrl, validate='url')
+            input.form-control(type='text', id="imageUrl", name='imageUrl', tabindex=8, placeholder='', value=law.imageUrl, validate='url')
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.votable')
           .col-sm-10.votable-toggle
         .form-group.hide
           label.col-sm-2.control-label= t('admin-laws-form.label.clause-truncation-text')
           .col-sm-10
-            input.form-control(type='text', name='clauseTruncationText', tabindex=8, placeholder=t('common.read-more'), value=law.clauseTruncationText)
+            input.form-control(type='text', name='clauseTruncationText', tabindex=9, placeholder=t('common.read-more'), value=law.clauseTruncationText)
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.source')
           .col-sm-10
-            input.form-control(type='url', name='source', tabindex=9, placeholder=t('admin-laws-form.placeholder.source'), value=law.source, validate='url')
+            input.form-control(type='url', name='source', tabindex=10, placeholder=t('admin-laws-form.placeholder.source'), value=law.source, validate='url')
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.summary')
           .col-sm-10
-            textarea.form-control(name='summary', tabindex=10)= law.summary
+            textarea.form-control(name='summary', tabindex=11)= law.summary
         .form-group
           label.col-sm-2.control-label= t('admin-laws-form.label.keywords')
           .col-sm-10
-            input.form-control(type='text', id="keywords", name='keywords', tabindex=11, placeholder=t('admin-laws-form.placeholder.keywords'), value=law.keywords)
+            input.form-control(type='text', id="keywords", name='keywords', tabindex=12, placeholder=t('admin-laws-form.placeholder.keywords'), value=law.keywords)
         .form-group.closingAt
           label.col-sm-2.control-label= t('admin-laws-form.label.closingAt')
           - var closingAt = ''
@@ -90,11 +94,11 @@
             - closingAt = closingAt.getFullYear() + '/' + (closingAt.getMonth() + 1) + '/' + closingAt.getDate()
           .col-sm-10
             .input-group
-              input.form-control(name='closingAt', tabindex=12, readonly=true, value=closingAt)
+              input.form-control(name='closingAt', tabindex=13, readonly=true, value=closingAt)
               span.input-group-addon.clear-closingAt
                 i.glyphicon.glyphicon-remove
             .input-group
-              input.form-control(name='closingAtTime', tabindex=13, value=closingAtTime, placeholder='hh:mm', validate='time')
+              input.form-control(name='closingAtTime', tabindex=14, value=closingAtTime, placeholder='hh:mm', validate='time')
         .form-group
           .law-clauses
             - if (law.clauses && law.clauses.length)
@@ -110,7 +114,7 @@
                 include link
           .col-sm-2.pull-right
             a.add-link.btn.btn-block.btn-info(href='#')= t('admin-laws-form.button.add-link')
-            .form-group: input.btn.btn-success.btn-block.btn-lg.hide(type='submit', tabindex=14, value=t('admin-laws-form.button.submit'))
+            .form-group: input.btn.btn-success.btn-block.btn-lg.hide(type='submit', tabindex=15, value=t('admin-laws-form.button.submit'))
           span.add-link-forbidden.hide=t('admin-laws-form.message.add-link-forbidden')
     .col-md-2.commands
       a.btn.btn-success.btn-block.save
