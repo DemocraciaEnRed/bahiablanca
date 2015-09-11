@@ -46,6 +46,11 @@
                         p
                           =t('landing.party') + ': '
                           span.party-name=law.party
+                if (law.authorHasTwitter)
+                  - var tweet = t('law.tweet.to-author', { author: law.twitterHandler })
+                  - tweet = '%23YoVoto ' + encodeURI(tweet)
+                  - var url = 'http://twitter.com/share?text=' + tweet
+                  a.flaticon.social.twitter.btn.btn-link.btn-block(target="_blank" href=url)=t('talk-to-the-author')
                 .pic(style='background-image:url(#{law.imageUrl})')
                   span
                 .law-tag.hide=law.tag._id
