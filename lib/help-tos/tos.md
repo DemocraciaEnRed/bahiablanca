@@ -30,3 +30,11 @@ Si te interesa ser parte del _DEBATE_ de **_DEMOS_**, te pedimos que procedas se
 El uso del sitio requiere que todos los visitantes del mismo se adhieran a los Términos y Condiciones, aceptándolos, desde ese momento, plenamente y sin reseva alguna, así como en su caso, las Condiciones Particulares que en el futuro puedan complementarlas, sustituirlas o modificarlas en algún sentido en relación con los servicios y contenidos de la plataforma. Por el sólo hecho de ingresar y hacer uso de la plataforma usted se adhiere en forma inmediata a todos y cada uno de los Términos y Condiciones. En consecuencia, deberás leer detenidamente los Términos y Condiciones así como las Condiciones Patriculares que puedan dictarse, antes de acceder y/o utilizar la plataforma.
 
 El uso del sitio significa que aceptás que todas las visitas u operaciones subsecuentes que realices estarán sujetas a estos Términos y Condiciones.
+
+En el caso de que tu comportamiento no respete una o varias de estas normas de convivencia, **_DEMOS_** te enviará, al correo electrónico identificado en tu perfil, una comunicación solicitándote que cambies tu proceder dentro de nuestra comunidad. En caso de que persistas en actitudes contrarias al espíritu de estos Términos y Condiciones, nos reservamos el derecho de suspender temporalmente o eliminar tu cuenta de usuario.
+
+Ante aquellos comentarios que expresamente vayan contra las leyes vigentes o que no respeten estas normas de convivencia, nos reservamos el derecho de reportar o eliminarlos de las conversaciones en las que hayan surgido. En el caso de que una entrada publicada en la comunidad sea parcial o totalmente un plagio de otro contenido, será eliminada de DEMOS sin previo aviso.
+
+Por último, te invitamos a revisar periódicamente estas reglas de comunidad. Es probable que en la medida en que **_DEMOS_** vaya evolucionando, hagamos algunos cambios. La Agencia de Innovación y Gobierno Abierto se reserva el derecho de cambiar, agregar o quitar partes de este acuerdo de Términos y Condiciones, en cualquier momento. Es tu responsabilidad revisarlos antes de usar el sitio.
+
+Si querés obtener mayor información sobre estas reglas, precisar sus alcances o reportar un comportamiento que a tu juicio vulnera lo aquí indicado, puedes contactarte escribiendo a bahiablanca@democracyos.org.
