@@ -18,5 +18,6 @@
   ],
   "styles": [ "styles.styl" ],
   "templates": [ "template.jade" ],
+  "images": [ "images/question-mark.svg" ],
   "main": "about.js"
 }
