@@ -1,23 +1,24 @@
 #landing
   .container-fluid
-    .col-sm-12.col-md-8.col-md-offset-2.filter
-      .row.well.well-lg
-        .col-md-12.col-xs-12.text-center
-          .row.higher
-            .input-group.input-group-md
-              span.input-group-addon
-                i.glyphicon.glyphicon-search
-              input.form-control.search(type='text', placeholder='#{t("landing.search.placeholder")}', autofocus)
-          .row.lower
-            .col-md-4.col-sm-6.col-xs-12.filters.text-center
-              .hidden-lg.hidden-md.hidden-sm &nbsp;
-              span#author-filter
-            .col-md-4.col-sm-6.col-xs-12.filters.text-center
-              .hidden-lg.hidden-md.hidden-sm &nbsp;
-              span#tag-filter
-            .col-md-4.col-sm-12.col-xs-12.sort
-              .hidden-lg.hidden-md &nbsp;
-              span#sort-button
+    .row
+      .col-sm-12.col-md-8.col-md-offset-2.filter
+        .row.well.well-lg
+          .col-md-12.col-xs-12.text-center
+            .row.higher
+              .input-group.input-group-md
+                span.input-group-addon
+                  i.glyphicon.glyphicon-search
+                input.form-control.search(type='text', placeholder='#{t("landing.search.placeholder")}', autofocus)
+            .row.lower
+              .col-md-4.col-sm-6.col-xs-12.filters.text-center
+                .hidden-lg.hidden-md.hidden-sm &nbsp;
+                span#author-filter
+              .col-md-4.col-sm-6.col-xs-12.filters.text-center
+                .hidden-lg.hidden-md.hidden-sm &nbsp;
+                span#tag-filter
+              .col-md-4.col-sm-12.col-xs-12.sort
+                .hidden-lg.hidden-md &nbsp;
+                span#sort-button
 
     .row
       .col-md-12.card
