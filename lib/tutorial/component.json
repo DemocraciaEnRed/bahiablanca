@@ -1,22 +1,37 @@
 {
   "name": "tutorial",
-  "description": "tutorial page",
   "dependencies": {
-    "component/dom": "1.0.6",
     "visionmedia/page.js": "1.3.7",
-    "jadejs/jade": "1.1.5",
-    "component/t": "1.0.0"
+    "component/dom": "0.7.1",
+    "component/t": "1.0.0",
+    "component/indexof": "0.0.1",
+    "tomerdmnt/carousel-slide": "*",
+    "visionmedia/page.js": "1.3.7",
+    "component/cookie": "1.1.1"
   },
   "locals": [
+    "view",
+    "title",
     "config",
     "citizen",
-    "view"
+    "request",
+    "render"
   ],
-  "scripts": [
-    "tutorial.js",
-    "view.js"
+  "images": [
+    "images/prev.svg",
+    "images/next.svg",
+    "images/clip.svg",
+    "images/tutorial-paso1.gif",
+    "images/tutorial-paso2.gif",
+    "images/tutorial-paso3.gif",
+    "images/tutorial-paso4.gif",
+    "images/tutorial-paso1-mobile.gif",
+    "images/tutorial-paso2-mobile.gif",
+    "images/tutorial-paso3-mobile.gif",
+    "images/tutorial-paso4-mobile.gif"
   ],
-  "styles": [ "styles.styl" ],
-  "templates": [ "template.jade" ],
+  "styles": ["tutorial.styl"],
+  "templates": ["template.jade"],
+  "scripts": ["tutorial.js", "view.js"],
   "main": "tutorial.js"
 }
