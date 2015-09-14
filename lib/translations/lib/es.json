@@ -24,6 +24,7 @@
   "admin-laws-form.delete-law.confirmation.ok": "Eliminar",
   "admin-laws-form.delete-law.confirmation.title": "Eliminar ley",
   "admin-laws-form.label.party": "Bloque",
+  "admin-laws-form.label.partyUrl": "URL del Bloque",
   "admin-laws-form.label.author": "Autor",
   "admin-laws-form.label.author-picture": "Foto del autor",
   "admin-laws-form.label.fgcolor": "Color",

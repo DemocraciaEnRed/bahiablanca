@@ -45,7 +45,10 @@
                       if (law.party)
                         p
                           =t('landing.party') + ': '
-                          span.party-name=law.party
+                          if (law.partyUrl)
+                            a.party-name(href=law.partyUrl target='_blank')=law.party
+                          else
+                            span.party-name=law.party
                 .pic(style='background-image:url(#{law.imageUrl})')
                   span
                 .law-tag.hide=law.tag._id
