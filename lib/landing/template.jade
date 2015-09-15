@@ -40,7 +40,12 @@
                       if (law.author)
                         =t('landing.author') + ': '
                         if (law.authorUrl)
-                          a.author-link.law-author(href=law.authorUrl)=law.author
+                          a.author-link.law-author(href=law.authorUrl target='_blank')=law.author
+                            if (law.authorHasTwitter)
+                              - var tweet = t('law.tweet.to-author', { author: law.twitterHandler })
+                              - tweet = '%23YoVoto ' + encodeURI(tweet)
+                              - var url = 'http://twitter.com/share?text=' + tweet
+                              a(target="_blank" href=url): i.flaticon.social.twitter
                         else
                           span.law-author=law.author
                       if (law.party)

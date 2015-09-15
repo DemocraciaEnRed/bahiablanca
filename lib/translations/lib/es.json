@@ -223,6 +223,11 @@
   "password.new": "Nueva contraseña",
   "password.repeat": "Repetir contraseña",
   "password.retype": "Reingresa la nueva contraseña",
+  "proposal.final-message.title": "Mensaje final",
+  "proposal.final-message.explanation": "La discusion y votación de este proyecto de ley ha concluido. Como usuario oficial, puede dejar un mensaje de cierre que será visualizado en este espacio.",
+  "proposal.final-message.submit": "Guardar",
+  "proposal.final-message.edit": "Modificar",
+  "proposal.final-message.cancel": "Cancelar",
   "proposal-article.article.alert.learn-more": "Más información",
   "proposal-article.article.alert.text": "Esta es una versión demo de DemocracyOS.",
   "proposal-article.participant.plural": "Participantes",
@@ -350,5 +355,7 @@
   "validators.min-length.singular": "Debe tener al menos 1 caracter",
   "validators.not.match": "No coinciden",
   "validators.password.not.match": "Las contraseñas no coinciden",
-  "validators.required": "Requerido"
+  "validators.required": "Requerido",
+  "badge.official": "Usuario oficial",
+  "law.tweet.to-author": "Hola @{author}! Quiero decirte algo sobre tu proyecto"
 }
