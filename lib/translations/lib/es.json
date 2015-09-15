@@ -356,5 +356,6 @@
   "validators.not.match": "No coinciden",
   "validators.password.not.match": "Las contraseñas no coinciden",
   "validators.required": "Requerido",
-  "badge.official": "Usuario oficial"
+  "badge.official": "Usuario oficial",
+  "law.tweet.to-author": "Hola @{author}! Quiero decirte algo sobre tu proyecto"
 }
