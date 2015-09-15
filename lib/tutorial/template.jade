@@ -1,32 +1,20 @@
-#tutorial-container
-  .col-md-12
-    .row
-      .title.text-center
-        h1 ¿Cómo funciona?
-    .row.text-center#carousel-container
-      .col-md-2
-      .col-md-8
-        a.btn-prev(href="#")
-        a.btn-next(href="#")
-        .carousel
-          .step1
-            .hidden-xs
-              .btn.btn-sm.skip.pull-right Saltar tutorial &gt;&gt;
-            .hidden-sm.hidden-md.hidden-lg
-              .btn.btn-sm.skip.pull-right Saltar tutorial &gt;&gt;
-          .step2
-            .hidden-xs
-              .btn.btn-sm.skip.pull-right Saltar tutorial &gt;&gt;
-            .hidden-sm.hidden-md.hidden-lg
-              .btn.btn-sm.skip.pull-right Saltar tutorial &gt;&gt;
-          .step3
-            .hidden-xs
-              .btn.btn-sm.skip.pull-right Saltar tutorial &gt;&gt;
-            .hidden-sm.hidden-md.hidden-lg
-              .btn.btn-sm.skip.pull-right Saltar tutorial &gt;&gt;
-          .step4
-            .hidden-xs
-              button.btn.btn-lg.btn-primary.skip Ver los proyectos
-            .hidden-sm.hidden-md.hidden-lg
-              button.btn.btn-md.btn-primary.skip Ver los proyectos
-      .col-md-2
+#tutorial-container.container
+  .row
+    .col-md-12
+      .tutorial-wrapper
+        .tutorial-container
+          .tutorial.swipe(data-tutorial)
+            .swipe-wrap
+              .item.paso-1
+                h2 ¿Cómo se organizan los Proyectos?
+              .item.paso-2
+                h2 ¿Cómo comentar en un Proyecto?
+              .item.paso-3
+                h2 ¿Cómo calificar los Argumentos?
+              .item.paso-4
+                h2 ¿Cómo votar los Proyectos?
+          .tutorial-points
+            .point.active(data-tutorial-point="1")
+            .point(data-tutorial-point="2")
+            .point(data-tutorial-point="3")
+            .point(data-tutorial-point="4")

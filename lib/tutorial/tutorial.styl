@@ -1,100 +1,92 @@
 #tutorial-container
-  .title
-    margin-top 0px
-    margin-bottom 30px
+  max-width: 960px
 
-  #carousel-container
-    padding-bottom 20px
+  .tutorial-wrapper
+    overflow: hidden
 
-  .carousel
-    background-position-y 0px
+  .tutorial-container
+    position: relative
+    margin: 0 auto
+    border-top: 6em solid transparent
+    border-bottom: 3em solid transparent
 
-    .btn-lg.skip
-      position absolute
-      bottom 5
-      right 30
-    .btn-sm.skip
-      position absolute
-      bottom 5
-      right 20
-    .btn-md.skip
-      position relative
-      top 470px
-    .hidden-md
-      .skip
-        top 463px
-        position relative
+    &:after
+      content: ''
+      display: block
+      padding-top: 36%
 
-    .step1
-      .hidden-xs
-        height 300px
-        background url('/lib/tutorial/images/tutorial-paso1.gif') no-repeat
-        background-position center
-        position relative
-      .hidden-sm.hidden-md.hidden-lg
-        height 500px
-        background url('/lib/tutorial/images/tutorial-paso1-mobile.gif') no-repeat
-        background-position center
-        .carousel .carousel-visible
-          height 500px
-    .step2
-      .hidden-xs
-        height 300px
-        background url('/lib/tutorial/images/tutorial-paso2.gif') no-repeat
-        background-position center
-        position relative
-      .hidden-sm.hidden-md.hidden-lg
-        height 500px
-        background url('/lib/tutorial/images/tutorial-paso2-mobile.gif') no-repeat
-        background-position center
-        .carousel .carousel-visible
-          height 500px
-    .step3
-      .hidden-xs
-        height 300px
-        background url('/lib/tutorial/images/tutorial-paso3.gif') no-repeat
-        background-position center
-        position relative
-      .hidden-sm.hidden-md.hidden-lg
-        height 500px
-        background url('/lib/tutorial/images/tutorial-paso3-mobile.gif') no-repeat
-        background-position center
-        position relative
-        .carousel .carousel-visible
-          height 500px
-    .step4
-      .hidden-xs
-        height 300px
-        background url('/lib/tutorial/images/tutorial-paso4.gif') no-repeat
-        background-position center
-        position relative
-      .hidden-sm.hidden-md.hidden-lg
-        height 500px
-        background url('/lib/tutorial/images/tutorial-paso4-mobile.gif') no-repeat
-        background-position center
-        .carousel .carousel-visible
-          height 500px
+      @media all and (orientation: portrait)
+        padding-top: 90%
 
-  .carousel .carousel-visible
-    height auto
+  .tutorial
+    visibility: hidden
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
 
-  .btn-prev, .btn-next
-    cursor pointer
-    position absolute
-    top 125px
-    z-index 1
-    width 40px
-    height 50px
-    transition all 0.7s ease
-    opacity .5
+    .swipe-wrap
+      position: relative
+      width: 100%
+      height: 100%
 
-  .btn-prev
-    left 50px
-    background url('/lib/tutorial/images/prev.svg') no-repeat
+    .item
+      float: left
+      position: relative
+      width: 100%
+      height: 100%
+      background-size: cover
+      background-color: #f9f9f9
+      background-repeat: no-repeat
+      background-position: center center
 
-  .btn-next
-    right 50px
-    background url('/lib/tutorial/images/next.svg') no-repeat
+    h2
+      position: absolute
+      bottom: 100%
+      left: 0
+      width: 100%
+      margin: 1em 0 .8em
+      font-weight: lighter
 
-  #carousel-footer
-    padding-bottom 30px
+    amount = 4
+    for i in (1..amount)
+      .paso-{i}
+        background-image: url('/lib/tutorial/images/tutorial-paso' + i + '.gif')
+
+    @media all and (orientation: portrait)
+      for i in (1..amount)
+        .paso-{i}
+          background-image: url('/lib/tutorial/images/tutorial-paso' + i + '-mobile.gif')
+
+  .tutorial-points
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    text-align: center
+
+    .point
+      position: relative
+      display: inline-block
+      width: 2em
+      height: 2.7em
+      margin: 0 5px
+      cursor: pointer
+
+      &.active:after
+        background: rgba(#333, .9)
+
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        margin: -2px 0 0 -2px
+        width: 4px
+        height: 4px
+        border-radius: 50%
+        background: rgba(#333, .2)
+        -webkit-transition: all .3
+        transition: all .3
+

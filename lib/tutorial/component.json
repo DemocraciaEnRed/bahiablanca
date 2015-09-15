@@ -5,16 +5,13 @@
     "component/dom": "0.7.1",
     "component/t": "1.0.0",
     "component/indexof": "0.0.1",
-    "tomerdmnt/carousel-slide": "*",
+    "DemocraciaEnRed/swipe": "2.1.1",
     "visionmedia/page.js": "1.3.7",
     "component/cookie": "1.1.1"
   },
   "locals": [
     "view",
     "title",
-    "config",
-    "citizen",
-    "request",
     "render"
   ],
   "images": [
