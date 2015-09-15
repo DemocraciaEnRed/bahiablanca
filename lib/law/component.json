@@ -19,7 +19,8 @@
     "comments-view",
     "browser-lock",
     "debug",
-    "next-law-button"
+    "next-law-button",
+    "laws"
   ],
   "scripts": [ "law.js" ],
   "styles": [ ],
