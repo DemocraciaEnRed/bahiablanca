@@ -39,18 +39,18 @@
                       if (law.author)
                         =t('landing.author') + ': '
                         if (law.authorUrl)
-                          a.author-link.law-author(href=law.authorUrl)=law.author
+                          a.author-link.law-author(href=law.authorUrl target='_blank')=law.author
+                            if (law.authorHasTwitter)
+                              - var tweet = t('law.tweet.to-author', { author: law.twitterHandler })
+                              - tweet = '%23YoVoto ' + encodeURI(tweet)
+                              - var url = 'http://twitter.com/share?text=' + tweet
+                              a(target="_blank" href=url): i.flaticon.social.twitter
                         else
                           span.law-author=law.author
                       if (law.party)
                         p
                           =t('landing.party') + ': '
                           span.party-name=law.party
-                if (law.authorHasTwitter)
-                  - var tweet = t('law.tweet.to-author', { author: law.twitterHandler })
-                  - tweet = '%23YoVoto ' + encodeURI(tweet)
-                  - var url = 'http://twitter.com/share?text=' + tweet
-                  a.flaticon.social.twitter.btn.btn-link.btn-block(target="_blank" href=url)=t('talk-to-the-author')
                 .pic(style='background-image:url(#{law.imageUrl})')
                   span
                 .law-tag.hide=law.tag._id
