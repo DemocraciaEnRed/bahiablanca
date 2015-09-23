@@ -328,6 +328,8 @@
   "signup.resend-validation-email": "Reenviar correo electrónico de validación",
   "signup.resend-validation-email-complete": "Reenviar correo electrónico de validación completado",
   "signup.retype-password": "Reingresa la contraseña",
+  "signup.signup-complete.title": "¡Bienvenido!",
+  "signup.signup-complete.description": "Sólo necesitamos que completes tu información personal para empezar.",
   "signup.user-already-validated": "Este ciudadano ya validó la dirección de correo electrónico",
   "signup.validation-email-resent": "El correo electrónico de validación ha sido reenviado.",
   "signup.welcome": "¡Felicitaciones, {name}!",
