@@ -359,5 +359,6 @@
   "validators.password.not.match": "Las contraseñas no coinciden",
   "validators.required": "Requerido",
   "badge.official": "Usuario oficial",
-  "law.tweet.to-author": "Hola @{author}! Quiero decirte algo sobre tu proyecto"
+  "law.tweet.to-author": "Hola @{author}! Quiero decirte algo sobre tu proyecto",
+  "signup.error.facebook.user-already-exists": "Ya existe un usuario registrado con ese email"
 }
