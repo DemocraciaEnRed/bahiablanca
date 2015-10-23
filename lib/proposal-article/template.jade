@@ -42,6 +42,9 @@
         - else
           =proposal.author
     h3=proposal.title
+    .keywords
+      - each keyword in proposal.keywords
+        span.keyword=keyword
     .entry-content
       .summary
       .clauses
