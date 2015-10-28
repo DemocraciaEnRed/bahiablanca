@@ -96,5 +96,6 @@
   "googleAPIKey": "",
   "visibility": "visible",
   "usersWhitelist": false,
-  "alwaysShowTopicResults": false
+  "alwaysShowTopicResults": false,
+  "smsApiUrl": ""
 }
