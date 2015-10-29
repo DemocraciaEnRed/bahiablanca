@@ -21,6 +21,9 @@
         label #{t('signup.phone')}
         input.form-control(type='text', id='phone', name='phone', tabindex=3, placeholder=t('signup.phone.placeholder'), validate='required phone')
       .form-group
+        label #{t('signup.dni')}
+        input.form-control(type='number', id='dni', name='dni', tabindex=3, placeholder=t('signup.dni.placeholder'), validate='required dni')
+      .form-group
         label= t('password')
         input.form-control(type='password', name='password', tabindex=4, placeholder=t('password'), validate='required min-length:6')
       .form-group
