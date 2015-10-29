@@ -111,7 +111,7 @@
   },
   "main": "pdr",
   "engines": {
-    "node": "0.10.x"
+    "node": "~4.2.1"
   },
   "scripts": {
     "postinstall": "node ./bin/dos-install --config && node ./bin/dos-build"
