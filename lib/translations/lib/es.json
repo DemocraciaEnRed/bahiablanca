@@ -157,7 +157,7 @@
   "democracyos.markdown.flavored": "Formato de texto",
   "dropdown.all": "Todos",
   "forgot.error.email-not-valid": "Tienes que validar tu dirección de correo electrónico antes de poder reestablecer tu contraseña",
-  "forgot.explanation": "Te enviaremos un correo electrónico con un enlace para reestablecer tu contraseña",
+  "forgot.explanation": "Te enviaremos un SMS con un enlace para reestablecer tu contraseña",
   "forgot.mail.example": "ejemplo@email.com",
   "forgot.mail.sent": "Enviamos un mensaje a tu correo electrónico con instrucciones para crear una nueva contraseña",
   "forgot.question": "¿Olvidaste tu contraseña?",
@@ -373,6 +373,8 @@
   "validators.not.match": "No coinciden",
   "validators.password.not.match": "Las contraseñas no coinciden",
   "validators.required": "Requerido",
+  "validator.phone.not.unique": "Ya existe otro usuario con ese celular",
+  "validator.email.not.unique": "Ya existe otro usuario con ese email",
   "badge.official": "Usuario oficial",
   "law.tweet.to-author": "Hola @{author}! Quiero decirte algo sobre tu proyecto",
   "signup.error.facebook.user-already-exists": "Ya existe un usuario registrado con ese email"
