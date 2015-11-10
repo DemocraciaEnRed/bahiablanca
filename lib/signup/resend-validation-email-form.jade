@@ -3,14 +3,14 @@
     .title-page
       .circle
         i.icon-user
-      h1= t('signup.resend-validation-email')
+      h1= t('signup.resend-validation-sms')
     form.form(action='/signup/resend-validation-email', method='post', role='form', autovalidate='autovalidate', autosubmit='autosubmit')
       ul.form-errors
       .form-group
-        label= t('signup.email')
-        input.form-control(type='text', name='email', tabindex=1, placeholder=t('forgot.mail.example'), validate='required email')
-      .form-group: button.btn.btn-success.btn-block.btn-lg(tabindex=2)=t('signup.resend-email')
+        label= t('signup.phone')
+        input.form-control(type='text', name='phone', tabindex=1, placeholder=t('signup.phone.placeholder'), validate='required phone')
+      .form-group: button.btn.btn-success.btn-block.btn-lg(tabindex=2)=t('signup.resend-sms')
   #resend-message.hide
-    h1= t('signup.email-sent')
-    p.lead.text-muted= t('signup.validation-email-resent')
-    p.lead.text-muted= t('signup.check-email')
+    h1= t('signup.sms-sent')
+    p.lead.text-muted= t('signup.validation-sms-resent')
+    p.lead.text-muted= t('signup.check-phone')
