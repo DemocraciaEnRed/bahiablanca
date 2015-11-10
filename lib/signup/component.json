@@ -30,7 +30,8 @@
     "signup-form-view.js",
     "email-validation-form-view.js",
     "resend-validation-email-form-view.js",
-    "email-validation-complete-view.js"
+    "email-validation-complete-view.js",
+    "validation-code-form-view.js"
   ],
   "styles": [ "signup.styl" ],
   "templates": [
@@ -38,7 +39,8 @@
     "signup-complete.jade",
     "email-validation-complete.jade",
     "resend-validation-email-form.jade",
-    "email-validation.jade"
+    "email-validation.jade",
+    "validation-code-form.jade"
   ],
   "main": "signup.js"
 }
