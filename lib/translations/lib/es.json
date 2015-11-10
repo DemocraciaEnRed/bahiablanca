@@ -327,6 +327,7 @@
   "signup.go-to": "Ir a los proyectos para",
   "signup.lastname": "Apellido",
   "signup.phone": "Celular",
+  "signup.phone.help": "Ingrese su número de teléfono sin anteponer 0 ni 15. No utilice guiones ni espacios. Por ejemplo, 1198765432 o 2919876543.",
   "signup.phone.placeholder": "Sólo números",
   "signup.dni": "DNI",
   "signup.dni.placeholder": "8 números, sin puntos",
