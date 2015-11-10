@@ -1,0 +1,14 @@
+.validation-code-container.inner-container.small-container
+  #validation-code-form
+    .title-page
+      .circle
+        i.icon-user
+      h1= t('signup.validation-code.title')
+      p.description= t('signup.validation-code.description')
+    form.form(action='/signup/validate', method='post', role='form', autovalidate='autovalidate', autosubmit='autosubmit')
+      ul.form-errors
+      .form-group
+        label= t('signup.validation-code')
+        input.form-control(type='text', name='token', tabindex=1, placeholder=t('signup.validation-code.placeholder'), validate='required')
+      .form-group: button.btn.btn-success.btn-block.btn-lg(tabindex=2)=t('signup.validation-code.submit')
+
