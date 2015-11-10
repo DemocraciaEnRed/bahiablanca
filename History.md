@@ -1,4 +1,24 @@
 
+0.22.0 / 2015-11-10
+===================
+
+  * [landing] Randomize proposals order. Closes #57
+  * Merge branch 'development' of github.com:DemocraciaEnRed/bahiablanca into development
+  * [sidebar] - Fix ocultar las leyes que no tienen que ver con la que se está viendo. Close #55
+  * Ask for validation code after a non-validated user signs in. Closes #63
+  * Merge branch 'add/send-sms' into development
+  * Changed some texts. Closes #62
+  * Added SMS validation code form #63
+  * Merge branch 'development' of github.com:DemocraciaEnRed/bahiablanca into development
+  * Fix resend validation sms
+  * Merge pull request #64 from DemocraciaEnRed/fix-front
+  * fix law card seperation Closes #58
+  * agregar links de ayuda #60
+  * Merge branch 'fix/boton-comenzar' into development
+  * Fix translation
+  * update acerca-de text #60
+  * Merge branch 'release-0.21.0' into development
+
 0.21.0 / 2015-11-10
 ===================
 
