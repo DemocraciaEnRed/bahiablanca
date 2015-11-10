@@ -1,4 +1,17 @@
 
+0.21.0 / 2015-11-10
+===================
+
+  * Merge remote-tracking branch 'origin/add/send-sms' into development
+  * Merge branch 'release-0.20.0' into development
+  * Added ability to recover password with SMS
+  * Bump node engine version to 4.2.1
+  * [signup] - Update phone input to be [type=number]
+  * [models:user] - Add DNI and phone to complete signup page
+  * [signup] - Add resend validation email by SMS instead of email
+  * [models:user] - Add DNI attribute
+  * [signup] - Add send SMS to validate user
+
 0.20.0 / 2015-11-10
 ===================
 
