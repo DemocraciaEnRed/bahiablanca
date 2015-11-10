@@ -1,4 +1,10 @@
 
+0.23.0 / 2015-11-10
+===================
+
+  * [signup] Added help text over phone field. Closes #65
+  * Merge branch 'release-0.22.0' into development
+
 0.22.0 / 2015-11-10
 ===================
 
