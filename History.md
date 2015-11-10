@@ -1,4 +1,11 @@
 
+0.24.0 / 2015-11-10
+===================
+
+  * Merge branch 'fix/images' into development
+  * Link images to Cloudup
+  * Merge branch 'release-0.23.0' into development
+
 0.23.0 / 2015-11-10
 ===================
 
