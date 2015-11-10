@@ -1,4 +1,6 @@
-li.parent(data-id=item.id)
+- var hide = parent && parent.id != item.id ? 'hide' : ''
+li.parent(data-id=item.id class=hide)
+  | #{selected}
   - var style = item.styles ? ('background:' + item.styles.bgColor + ';color:' + item.styles.fgColor) : ''
   a.parent(href='/law/#{item.id}', style=style)
     span.title= item.mediaTitle
