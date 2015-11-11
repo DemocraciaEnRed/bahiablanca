@@ -1,4 +1,13 @@
 
+0.26.0 / 2015-11-11
+===================
+
+  * Agregar check cuando se vota una ley
+  * Corregida la imgen de check en el sidebar cuando se voto una ley
+  * Las leyes no votables no pueden ser comentadas tampoco
+  * Fix hashtag on twitter share
+  * Merge branch 'release-0.25.0' into development
+
 0.25.0 / 2015-11-11
 ===================
 
