@@ -17,7 +17,9 @@ li.parent(data-id=item.id class=hide)
         a(href='/law/#{child.id}', class=classes.join(' '))
           .item-tag
           .item-badges
+          span.title
             - var voted = citizen.logged() && !!child.voted
             - if (voted)
-              include ./check
-          span.title= child.mediaTitle
+              i.glyphicon.glyphicon-ok
+              |  
+            = child.mediaTitle
