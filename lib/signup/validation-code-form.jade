@@ -5,7 +5,7 @@
         i.icon-user
       h1= t('signup.validation-code.title')
       p.description= t('signup.validation-code.description')
-    form.form(action='/signup/validate', method='post', role='form', autovalidate='autovalidate', autosubmit='autosubmit')
+    form.form(action='reset' === action ? '' : '/signup/validate', method='reset' === action ? '' : 'post', role='form', autosubmit='autosubmit')
       ul.form-errors
       .form-group
         label= t('signup.validation-code')
