@@ -1,4 +1,13 @@
 
+0.25.0 / 2015-11-11
+===================
+
+  * Trying to fix sidebar
+  * add contact on landing
+  * [about] - Agregadas dos nuevas preguntas sobre el voto vinculante y la redireccion a bahiablanca.democracyos.org
+  * [about] - Cambiar 'cuatro' por 'cinco'. Close #66
+  * Merge branch 'release-0.24.0' into development
+
 0.24.0 / 2015-11-10
 ===================
 
