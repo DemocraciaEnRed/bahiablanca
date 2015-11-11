@@ -1,4 +1,9 @@
 
+0.27.0 / 2015-11-11
+===================
+
+  * Added validation code request after asking for password renewal. Closes #67
+
 0.26.0 / 2015-11-11
 ===================
 
