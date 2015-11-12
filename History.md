@@ -1,4 +1,25 @@
 
+0.28.0 / 2015-11-12
+===================
+
+  * Merge pull request #74 from DemocraciaEnRed/add-fb-law-img
+  * Merge pull request #75 from DemocraciaEnRed/add/participants-count-parent-law
+  * fix margins
+  * [landing] Added participants counter to law cards. Closes #71
+  * [proposal-article] Show total participants in parent law. Closes #71
+  * [law-api] Deliver total participants in parent law (the sum of all the participants in its children) #71
+  * Merge branch 'development' of github.com:DemocraciaEnRed/bahiablanca into development
+  * [UI] - Arreglar el botón de Pasar a la Siguiente Ley. Close #72
+  * add law image to facebook-card/law
+  * replace mongoose-shortid for mongoose-minid
+  * Merge branch 'update/share-text' into development
+  * [proposal-article] - Update sharing text. Close #69
+  * Release 0.27.0
+  * Merge pull request #68 from DemocraciaEnRed/fix/forgot-password-flow
+  * Fixed sms message #67
+  * Added validation code request after asking for password renewal. Closes #67
+  * Merge branch 'release-0.26.0' into development
+
 0.27.0 / 2015-11-11
 ===================
 
