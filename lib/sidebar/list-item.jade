@@ -19,7 +19,6 @@ li.parent(data-id=item.id class=hide)
           .item-badges
           span.title
             - var voted = citizen.logged() && !!child.voted
-            - if (voted)
+            if (voted)
               i.glyphicon.glyphicon-ok
-              |  
-            = child.mediaTitle
+            = ' ' + child.mediaTitle
