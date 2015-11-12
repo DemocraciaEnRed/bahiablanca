@@ -76,7 +76,7 @@
             a(target="_blank", href=link.url)=link.text
 
     //- Article participants
-    .participants(class=proposal.votable ? '' : 'hide')
+    .participants(class=proposal.votable || !proposal.parent ? '' : 'hide')
       //- Rendered by participants view
 
     //- Article share links

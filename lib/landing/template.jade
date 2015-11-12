@@ -62,6 +62,12 @@
                   !=law.summary
                 .law-keywords.hide
                   =law.keywords.join(' ')
+              .participants
+                - if (law.participants.length)
+                  span=law.participants.length
+                  span &nbsp; ciudadanos participando
+                - else
+                  span Sé el primero en participar
               a(href='/law/#{law.id}').btn.btn-primary.btn-block.discuss=t('landing.discuss')
 
     footer.footer-container
