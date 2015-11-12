@@ -82,12 +82,6 @@
     //- Article share links
     .share-links
       a(target="_blank", href="http://www.facebook.com/sharer.php?u=#{baseUrl}/law/#{proposal.id}").flaticon.social.facebook
-      if (proposal.authorHasTwitter)
-        - var tweet = t('law.tweet.to-author', { author: proposal.twitterHandler })
-        - tweet = '%23DEMOS ' + encodeURI(tweet)
-        - var url = 'http://twitter.com/share?text=' + tweet
-        a(target="_blank" href=url): i.flaticon.social.twitter
-      else
-        - var text = '%23DEMOS ' + proposal.mediaTitle
-        a(target="_blank", href="http://twitter.com/share?text=#{text}&url=#{baseUrl}/law/#{proposal.id}").flaticon.social.twitter
+      - var text = 'Ya participé en %23DEMOS en el proyecto sobre ' + parent.mediaTitle
+      a(target="_blank", href="http://twitter.com/share?text=#{text}&url=#{baseUrl}/law/#{proposal.id}").flaticon.social.twitter
       a(target="_blank", href="https://plus.google.com/share?url=#{baseUrl}/law/#{proposal.id}").flaticon.social.google-plus
