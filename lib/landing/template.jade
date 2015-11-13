@@ -28,6 +28,8 @@
           for law in laws
             .col-md-4
               .well.law
+                if (law.closed)
+                  .corner-ribbon.top-left=t('admin-laws.list.close.past')
                 a(href='/law/#{law.id}').law-title-link.text-center
                   h2.law-title(style=law.styles ? 'background-color:#{law.styles.bgColor};color:#{law.styles.fgColor}' : '')=law.mediaTitle
                 .law-closing-date.hide=law.closingAt
