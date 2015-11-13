@@ -15,7 +15,8 @@
     "view",
     "debug",
     "config",
-    "form-view"
+    "form-view",
+    "richtext"
   ],
   "scripts": [ "proposal-message.js" ],
   "templates": [

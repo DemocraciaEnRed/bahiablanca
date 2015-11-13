@@ -16,6 +16,7 @@
     "laws-filter",
     "proposal-article",
     "proposal-options",
+    "proposal-message",
     "comments-view",
     "browser-lock",
     "debug",
