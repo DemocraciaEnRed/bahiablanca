@@ -1,4 +1,14 @@
 
+0.30.0 / 2015-11-30
+===================
+
+  * [sidebar] - Do not filter closed laws
+  * Moved close message container to be shown on non-votable laws #77
+  * [homepage] - Agregar ribbon de CERRADO cuando una ley ya cerró. Close #78
+  * [proposal-message] Added rich text editor to close message #77
+  * [db-api:law] - Agregar valor por default para inicializar el array reduce
+  * [proposal-article-view] Filter empty keywords. Closes #76
+
 0.29.0 / 2015-11-13
 ===================
 
