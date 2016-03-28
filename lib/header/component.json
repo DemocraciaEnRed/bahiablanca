@@ -4,7 +4,7 @@
   "dependencies": {
     "component/dom": "1.0.6",
     "component/bus": "^0.0.2",
-    "jadejs/jade": "1.1.5",
+    "jadejs/jade": "1.11.0",
     "democracyos/headroom.js": "0.7.1"
   },
   "locals": [

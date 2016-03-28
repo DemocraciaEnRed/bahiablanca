@@ -2,7 +2,7 @@
   "name": "admin-tags",
   "description": "Admin tags view",
   "dependencies": {
-    "jadejs/jade": "1.1.5",
+    "jadejs/jade": "1.11.0",
     "andrewrk/node-diacritics": "1.2.0",
     "javve/list.js": "1.1.1",
     "visionmedia/page.js": "1.3.7"
