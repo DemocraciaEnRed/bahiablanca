@@ -3,7 +3,7 @@
   "description": "Landing page showing parent laws",
   "dependencies": {
     "visionmedia/page.js": "1.3.7",
-    "jadejs/jade": "1.11.0",
+    "pugjs/pug": "1.11.0",
     "tj/node-querystring": "0.6.6",
     "yields/empty": "0.0.1",
     "component/dom": "1.0.6",

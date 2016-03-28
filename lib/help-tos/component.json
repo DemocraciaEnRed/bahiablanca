@@ -2,7 +2,7 @@
   "name": "help-tos",
   "description": "Help Terms of Service view",
   "dependencies": {
-    "jadejs/jade": "1.11.0",
+    "pugjs/pug": "1.11.0",
     "chjj/marked": "v0.3.2"
   },
   "locals": [

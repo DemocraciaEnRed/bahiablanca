@@ -3,7 +3,7 @@
   "description": "Admin sidebar",
   "dependencies": {
     "component/classes": "1.2.0",
-    "jadejs/jade": "1.11.0",
+    "pugjs/pug": "1.11.0",
     "slifszyc/query": "0.0.3"
   },
   "locals": [

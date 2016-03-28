@@ -9,7 +9,7 @@
     "component/t": "1.0.0",
     "slifszyc/query": "0.0.3",
     "component/closest": "0.1.4",
-    "jadejs/jade": "1.11.0",
+    "pugjs/pug": "1.11.0",
     "yields/empty": "0.0.1",
     "yields/serialize": "0.2.0",
     "DemocracyOS/marked": "master"

@@ -2,7 +2,7 @@
   "name": "help-faq",
   "description": "Help FAQ view",
   "dependencies": {
-    "jadejs/jade": "1.11.0",
+    "pugjs/pug": "1.11.0",
     "chjj/marked": "v0.3.2"
   },
   "locals": [

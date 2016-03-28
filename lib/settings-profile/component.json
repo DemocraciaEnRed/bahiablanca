@@ -2,7 +2,7 @@
   "name": "settings-profile",
   "description": "Settings profile view",
   "dependencies": {
-    "jadejs/jade": "1.11.0",
+    "pugjs/pug": "1.11.0",
     "component/t": "1.0.0"
   },
   "locals": [
