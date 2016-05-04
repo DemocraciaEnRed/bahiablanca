@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var config = require('lib/config');
 var app = require('lib/boot');
 var serverFactory = require('lib/server-factory');
