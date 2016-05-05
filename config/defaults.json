@@ -16,6 +16,8 @@
   "officialUsers": [],
   "allowEmailAliases": true,
   "facebookSignin": false,
+  "smsValidation": true,
+  "smsApiUrl": "",
   "auth": {
     "basic": {
       "username": "",
@@ -96,6 +98,5 @@
   "googleAPIKey": "",
   "visibility": "visible",
   "usersWhitelist": false,
-  "alwaysShowTopicResults": false,
-  "smsApiUrl": ""
+  "alwaysShowTopicResults": false
 }

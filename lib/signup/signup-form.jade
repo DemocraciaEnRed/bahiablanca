@@ -44,4 +44,5 @@
     h1 Welcome
     p.lead.text-muted #{t('signup.received')}.
     p.lead.text-muted= t('signup.check-email')
-    a(href='/signup/resend-validation-email')= t('signup.resend-validation-sms')
+    a(href='/signup/resend-validation-email')
+      = t('signup.resend-validation-' + config.smsValidation ? 'sms' : 'email')
