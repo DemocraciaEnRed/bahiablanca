@@ -17,10 +17,11 @@
       .form-group
         label #{t('signup.your-lastname')}
         input.form-control(type='text', id='lastName', name='lastName', tabindex=3, placeholder=t('signup.lastname'), validate='required lastname')
-      .form-group
-        label #{t('signup.phone')}
-        input.form-control(type='number', id='phone', name='phone', tabindex=3, placeholder=t('signup.phone.placeholder'), validate='required phone')
-        p.help-block= t('signup.phone.help')
+      - if (config.smsValidation)
+        .form-group
+          label #{t('signup.phone')}
+          input.form-control(type='number', id='phone', name='phone', tabindex=3, placeholder=t('signup.phone.placeholder'), validate='required phone')
+          p.help-block= t('signup.phone.help')
       .form-group
         label #{t('signup.dni')}
         input.form-control(type='number', id='dni', name='dni', tabindex=3, placeholder=t('signup.dni.placeholder'), validate='required dni')

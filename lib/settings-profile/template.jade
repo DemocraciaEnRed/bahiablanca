@@ -15,9 +15,10 @@
       .form-group.profile-email
         label= t('signup.email')
         input.form-control(type='text', name='email', tabindex=3, placeholder=t('forgot.mail.example'), value=citizen.email, validate='required email')
-      .form-group.profile-phone
-        label= t('signup.phone')
-        input.form-control(type='number', name='phone', tabindex=3, placeholder=t('signup.phone.placeholder'), value=citizen.phone, validate='required phone')
+      - if (config.smsValidation)
+        .form-group.profile-phone
+          label= t('signup.phone')
+          input.form-control(type='number', name='phone', tabindex=3, placeholder=t('signup.phone.placeholder'), value=citizen.phone, validate='required phone')
       .form-group.profile-dni
         label= t('signup.dni')
         input.form-control(type='number', name='dni', tabindex=3, placeholder=t('signup.dni.placeholder'), value=citizen.dni, validate='required dni')
