@@ -4,7 +4,7 @@
   "protocol": "http",
   "host": "localhost",
   "publicPort": 3000,
-  "mongoUrl": "mongodb://localhost/DemocracyOS-dev",
+  "mongoUrl": "mongodb://localhost/DemocracyOS-bahiablanca",
   "mongoUsersUrl": "",
   "jwtSecret": "Generate a secret token and paste it here.",
   "deploymentId": "",
@@ -16,7 +16,7 @@
   "officialUsers": [],
   "allowEmailAliases": true,
   "facebookSignin": false,
-  "smsValidation": true,
+  "smsValidation": false,
   "smsApiUrl": "",
   "auth": {
     "basic": {
