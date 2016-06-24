@@ -3,7 +3,7 @@
     .title-page
       .circle
         i.icon-user
-      h1= t('signup.resend-validation-' + config.smsValidation ? 'sms' : 'email')
+      h1= t('signup.resend-validation-' + (config.smsValidation ? 'sms' : 'email'))
     form.form(action='/signup/resend-validation-email', method='post', role='form', autovalidate='autovalidate', autosubmit='autosubmit')
       ul.form-errors
       - if (config.smsValidation)
