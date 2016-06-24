@@ -44,6 +44,7 @@
     "publicPort",
     "env",
     "locale",
+    "smsValidation",
     "logo",
     "logoMobile",
     "favicon",
